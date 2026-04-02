@@ -3,6 +3,7 @@ Raw Datasets
 This project uses two raw Reddit datasets collected from cannabis-related online communities for the period January 1, 2022 through January 1, 2025. The purpose of these datasets is to support temporal sentiment analysis of consumer discussions surrounding cannabis-derived products, including oils, tinctures, gummies, edibles, vapes, and topicals.
 
 The raw data were collected from the following subreddits:
+
 •	r/CBD
 •	r/cannabis
 •	r/trees
@@ -10,6 +11,7 @@ The raw data were collected from the following subreddits:
 •	r/Marijuana
 
 Data collection was performed using the PullPush Reddit search API, which provides access to historical Reddit content. We queried both the submission endpoint for posts and the comment endpoint for comments. To identify relevant discussions, we searched using cannabis- and product-related keywords such as CBD, edible, gummies, vape, oil, tincture, and topical. Queries were run in monthly time intervals to collect historical data across the full study period. The resulting raw datasets were saved into two separate files:
+
 •	reddit_posts.csv
 •	reddit_comments.csv
 
@@ -18,6 +20,7 @@ Dataset 1: reddit_posts.csv
 This file contains Reddit posts collected from the selected subreddits.
 
 Column descriptions
+
 •	id: Unique Reddit identifier for each post.
 	•	subreddit: Name of the subreddit where the post was published.
 	•	title: Title of the Reddit post.
