@@ -1,4 +1,4 @@
-Raw Datasets
+## Raw Datasets
 
 This project uses two raw Reddit datasets collected from cannabis-related online communities for the period January 1, 2022 through January 1, 2025. The purpose of these datasets is to support temporal sentiment analysis of consumer discussions surrounding cannabis-derived products, including oils, tinctures, gummies, edibles, vapes, and topicals.
 
@@ -20,11 +20,11 @@ Data collection was performed using the PullPush Reddit search API, which provid
 
 •	reddit_comments.csv
 
-Dataset 1: reddit_posts.csv
+### Dataset 1: reddit_posts.csv
 
 This file contains Reddit posts collected from the selected subreddits.
 
-Column descriptions
+Column descriptions:
 
 •	id: Unique Reddit identifier for each post.
 
@@ -58,11 +58,11 @@ Column descriptions
 
 •	full_text: Combined text field created by concatenating title and selftext for downstream text analysis.
 
-Dataset 2: reddit_comments.csv
+### Dataset 2: reddit_comments.csv
 
 This file contains Reddit comments collected from the selected subreddits.
 
-Column descriptions
+Column descriptions:
 
 •	id: Unique Reddit identifier for each comment.
 
@@ -92,6 +92,6 @@ Column descriptions
 
 •	month: Month extracted from date_utc.
 
-Notes
+## Notes
 
 These datasets are considered raw data because they were collected directly from the API before final filtering, labeling, and modeling. Duplicate records were removed based on Reddit IDs, and basic text cleaning was performed to standardize formatting. These raw files serve as the starting point for subsequent preprocessing, sentiment classification, and temporal analysis in this class project.
